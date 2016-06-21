@@ -49,7 +49,7 @@ def main(_):
       env = GymEnvironment(config)
 
     if FLAGS.use_gpu:
-      config.cnn_format = 'NHWC'
+      config.cnn_format = 'NCHW'
 
     agent = Agent(config, env, sess)
 
